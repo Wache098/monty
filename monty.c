@@ -49,7 +49,7 @@ int main(int argc, char **argv)
                 fprintf(stderr, "L%d: usage: push integer\n", line_number);
                 handle_error(&line, &file, &stack);
             }
-            push_handler(&stack, line_number, argument);
+            push_handler(&stack);
         }
         else if (strcmp(opcode, "pall") == 0)
         {

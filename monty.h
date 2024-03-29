@@ -43,4 +43,5 @@ void pall_handler(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
 void handle_error(char **line, FILE **file, stack_t **stack);
 void free_resources(char **line, FILE **file, stack_t **stack);
+void pint_handler(stack_t **stack, unsigned int line_number);
 #endif /* MONTY_H */

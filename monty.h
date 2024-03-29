@@ -37,7 +37,8 @@ typedef struct instruction_s
     void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void push_handler(stack_t **stack);
+void push(stack_t **stack, int value);
+void push_handler(stack_t **stack, unsigned int line_number, char *argument);
 void pall_handler(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
 void handle_error(char **line, FILE **file, stack_t **stack);
